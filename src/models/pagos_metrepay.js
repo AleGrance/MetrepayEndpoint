@@ -33,17 +33,17 @@ module.exports = (sequelize, DataType) => {
     },
     label: {
       type: DataType.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     // Qué número de cuota fue la pagada (entre las totales programadas vía MetrePay)
     subscriptionPayedPeriod: {
       type: DataType.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     // Cantidad total de cuotas programadas por MetrePay
     subscriptionTotalPeriods: {
       type: DataType.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 

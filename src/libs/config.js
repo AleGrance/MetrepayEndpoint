@@ -5,7 +5,7 @@ module.exports = {
   keepAlive: true,
   params: {
     dialect: "postgres",
-    host: "192.168.10.245",
+    host: "localhost",
     port: 5432,
   },
 };

@@ -55,6 +55,10 @@ module.exports = (sequelize, DataType) => {
   };
 
   Users.associate = (models) => {
+    Users.hasMany(models.Pagos_links_metrepay);
+  };
+
+  Users.associate = (models) => {
     Users.belongsTo(models.Roles, {
       foreignKey: {
         name: "role_id",
